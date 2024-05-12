@@ -37,7 +37,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="atendimento.php"><i class="fas fa-headset"></i>Atendimento |</a>
-                    </li>  
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="tecnico.php"><i class="fas fa-wrench">Técnico  |</i></a>
                     </li>
@@ -51,12 +51,11 @@
                         <a class="nav-link" href="noc.php"><i class="fas fa-descktop">NOC </i></a>
                     </li>
                             <!-- BOTÃO DE SAIR -->
-                    <button type="button" class="btn btn-info" style="width: 50px; height: 40px; background-color: #a46b14 ; font-size: 6pt;" data-toggle="modal" data-target="#exampleModal">
-                    Sair
-                    </button>
-            </ul>
-        </div>
-    </nav>
+                    <a href="#" class="btSair">Sair</a>    
+                </ul>
+            </div>
+        </nav>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

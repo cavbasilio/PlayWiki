@@ -10,11 +10,47 @@
 }
 
 body{
-    background-image: url('./../img/web.jpg');
+    margin-left: 10px;
+    background-image: url('./../img/fundo.png');
     
 }
 
 
+/* BOTÃO SAIR */
+.btSair {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btSair:hover,
+.btSair:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btSair:active {
+  background: var(--color);
+  color: #fff;
+}
 
 .container{
     display: flex;
@@ -101,15 +137,47 @@ body{
 
 }
 
+
+
 #vcSabia{ 
 font-family: 'Overlock SC', sans-serif;
     
 }
 
-/* TECNICO */
+
+/* TÉCNICO */
 .btn {
-    display:block;
-    border: 2px #F09819 solid;
-    margin: 3px ;
-    
+  align-items: center;
+  background-color: #fa6400;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: center;
+  position: relative;
+  transition: all 250ms;
+  touch-action: manipulation;
+  width: 550px;
+  margin-top: 10px;
+
+ 
+}
+
+.btn:hover, .btn:focus {
+  background-color: #F09819;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
 }

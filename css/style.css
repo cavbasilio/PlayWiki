@@ -181,3 +181,38 @@ font-family: 'Overlock SC', sans-serif;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+#btn-aparelho{
+  align-items: center;
+  background-color: #fa6400;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  justify-content: center;
+  position: relative;
+  transition: all 250ms;
+ 
+  width: 170px;
+  margin-top: 10px;
+  
+}
+/* Caixas de hierarquia */
+
+#caixa-supervisor{
+  border: solid red;
+  width: 150px;
+  height: 150px;
+}
+#caixa-tecnico1{
+  border: solid red;
+  width: 150px;
+  height: 150px;
+}
+#caixa-tecnico2{
+  border: solid red;
+  width: 150px;
+  height: 150px;
+}

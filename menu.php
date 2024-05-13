@@ -19,12 +19,10 @@
         <link rel="stylesheet" href="css/style.css">
        
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa500;">
-        <a class="navbar-brand" href="index.php">
-            <img src="img/logoPlay.png" id="imgplayfibraNav"
-                class="d-inline-block align-top">
-        </a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa500; ">
+    <a class="navbar-brand" href="index.php">
+        <img src="img/logoPlay.png" id="imgplayfibraNav" class="d-inline-block align-top">
+    </a>
 
         <!-- Botão do hamburguer para telas menores -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -43,7 +41,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fusao.php"><i class="fas fa-code-branch"></i>Fusão  |</a>
-                    </li>    
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="financeiro.php"><i class="fas fa-dollar-sign">Financeiro  |</i></a>
                     </li>
@@ -55,6 +53,8 @@
                 </ul>
             </div>
         </nav>
+<body>
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

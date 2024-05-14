@@ -34,16 +34,16 @@
                     <!-- Links para as páginas com ícones -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="atendimento.php"><i class="fas fa-headset"></i>Atendimento |</a>
+                        <a class="nav-link" href="atendimento.php"><i class="fas fa-headset"></i>Atendimento </a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="tecnico.php"><i class="fas fa-wrench">Técnico  |</i></a>
+                        <a class="nav-link" href="tecnico.php"><i class="fas fa-wrench">Técnico </i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fusao.php"><i class="fas fa-code-branch"></i>Fusão  |</a>
+                        <a class="nav-link" href="fusao.php"><i class="fas fa-code-branch"></i>Fusão </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="financeiro.php"><i class="fas fa-dollar-sign">Financeiro  |</i></a>
+                        <a class="nav-link" href="financeiro.php"><i class="fas fa-dollar-sign">Financeiro </i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="noc.php"><i class="fas fa-descktop">NOC </i></a>
@@ -52,7 +52,7 @@
                     <a href="#" class="btSair">Sair</a>    
                 </ul>
             </div>
-        </nav>
+</nav>
 <body>
 
 

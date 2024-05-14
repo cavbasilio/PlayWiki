@@ -5,9 +5,19 @@
 }
 #imgplayfibraNav{
    
-    width: 110px;
+    width: 80px;
     border-radius: 10px;
 }
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Espaçamento entre os itens do menu */
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Remove o espaçamento à direita do último item do menu */
+}
+
 
 body{
     background-image: url('./../img/fundo.png');
@@ -201,7 +211,7 @@ font-family: 'Overlock SC', sans-serif;
 /**************** Caixas de hierarquia *************/
 
 .cracha {
-  width: 200px;
+  width: 160px;
   background-color: #ef7a2d;
   border-radius: 8px;
   padding: 30px;
@@ -230,3 +240,28 @@ font-family: 'Overlock SC', sans-serif;
   text-align: center;
   color: #666;
 }
+
+.cracha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  }
+.cracha:last-child {
+    margin-right: 0;
+}
+
+.cracha .avatar img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+}
+
+.barra-vertical {
+    height: 170px; 
+    width: 4px; 
+    background-color: #ef7a2d; 
+    margin-right: 20px; 
+}
+

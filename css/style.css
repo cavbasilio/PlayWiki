@@ -210,58 +210,306 @@ font-family: 'Overlock SC', sans-serif;
 }
 /**************** Caixas de hierarquia *************/
 
-.cracha {
-  width: 160px;
-  background-color: #ef7a2d;
-  border-radius: 8px;
-  padding: 30px;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 15px;
-}
-
-.avatar img {
+.tela-tecnico {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.nome {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.cargo {
-  text-align: center;
-  color: #666;
+  
 }
 
-.cracha {
+.tela-tecnico .div {
+  background-color: #ffffff;
+  width: 1160px;
+  height: 1400px;
+  position: relative;
+}
+/* NOME RENAN*/
+.tela-tecnico .headline {
+  top: 293px;
+  left: 190px;
+  display: flex; 
+  flex-direction: column;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+}
+
+/* DIV NOME DE TODOS OS TÉCNICOS*/
+.tela-tecnico .text-wrapper {
+  position: relative;
+  width: 186px;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: -0.70px;
+  line-height: normal;
+  
+}
+
+/* DIV VICTOR GERAL*/
+.tela-tecnico .overlap-group {
+  position: absolute;
+  width: 224px;
+  height: 256px;
+  top: 293px;
+  left: 964px;
+ 
+}
+
+/* DIV NOME VICTOR E EMANUEL */
+.tela-tecnico .div-wrapper {
+  top: 0;
+  left: 38px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-  }
-.cracha:last-child {
-    margin-right: 0;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+
+}
+/* VICTOR IMAGEM */
+.tela-tecnico .hero-image {
+  top: 37px;
+  left: 0;
+  border: solid 4px;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
 }
 
-.cracha .avatar img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    margin-bottom: 10px; 
+/* DIV EMANUEL GERAL */
+.tela-tecnico .overlap {
+  position: absolute;
+  width: 224px;
+  height: 248px;
+  top: 552px;
+  left: 964px;
 }
 
-.barra-vertical {
-    height: 170px; 
-    width: 4px; 
-    background-color: #ef7a2d; 
-    margin-right: 20px; 
+/*  EMANUEL IMAGEM */
+.tela-tecnico .img {
+  top: 29px;
+  left: 0;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+  
+}
+/*  JOSIEL GERAL*/
+.tela-tecnico .overlap-2 {
+  position: absolute;
+  width: 227px;
+  height: 262px;
+  top: 561px;
+  left: 127px;
+ 
 }
 
+/*JOSIEL NOME*/
+.tela-tecnico .headline-2 {
+  top: 0;
+  left: 41px;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+  
+  
+  
+}
+/* JOSIEL IMAGEM*/
+.tela-tecnico .hero-image-2 {
+  top: 30px;
+  left: 0;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px;
+  border-radius: 10px;
+  border-color: #ef7a2d;
+}
+/* DIV NOME DO TECNICO VAZIO */
+.tela-tecnico .overlap-3 {
+  position: absolute;
+  width: 219px;
+  height: 249px;
+  top: 1122px;
+  left: 963px;
+ 
+}
+/* NOME DO TECNICO VAZIO*/
+.tela-tecnico .headline-3 {
+  top: 0;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 44px;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+
+}
+
+/* LUCIEL E TECNICO VAZIO IMAGEM*/
+.tela-tecnico .hero-image-3 {
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  top: 30px;
+  left: 0;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+  
+}
+
+/* RODRIGO NOME*/
+.tela-tecnico .headline-4 {
+  top: 827px;
+  left: 162px;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+
+}
+/* THIAGO GUIDA IMAGEM*/
+.tela-tecnico .hero-image-4 {
+  top: 226px;
+  left: 549px;
+  position: absolute;
+  width: 230px;
+  height: 225px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+
+}
+
+/* RENAN IMAGEM*/
+.tela-tecnico .hero-image-5 {
+  top: 338px;
+  left: 127px;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+  
+}
+
+/* RODRIGO IMAGEM */
+.tela-tecnico .hero-image-6 {
+  top: 871px;
+  left: 127px;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+ 
+}
+
+/* NOMELEONARDO*/
+.tela-tecnico .headline-5 {
+  top: 1108px;
+  left: 162px;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+
+}
+/* IMAGEM LEONARDO */
+.tela-tecnico .hero-image-7 {
+  top: 1152px;
+  left: 127px;
+  position: absolute;
+  width: 200px;
+  height: 219px;
+  border: solid 4px;
+  border: solid 4px #ef7a2d;
+  border-radius: 10px;
+}
+
+/* LUCIEL GERAL*/
+.tela-tecnico .overlap-4 {
+  position: absolute;
+  width: 219px;
+  height: 249px;
+  top: 841px;
+  left: 964px;
+}
+
+/* DIV THIAGO GUIDA NOME*/
+.tela-tecnico .headline-6 {
+  top: 182px;
+  left: 553px;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 44px;
+  align-items: flex-start;
+  gap: var(--variable-collection-spacing-s);
+  position: absolute;
+
+}
+
+/* DIV THIAGO GUIDA NOME 2*/
+.tela-tecnico .text-wrapper-2 {
+  position: relative;
+  width: 200px;
+  height: 22px;
+  margin-top: -1px;
+  margin-right: -14px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: normal;
+  white-space: nowrap;
+
+}
+
+/* BARRA CENTRAL DA PAGINA*/
+.tela-tecnico .vector {
+  position: absolute;
+  width: 5px;
+  height: 820px;
+  top: 504px;
+  left: 662px;
+  border: thick double #ef7a2d;
+}
+/* NOME TÍTULO.*/
+.tela-tecnico .text-wrapper-3 {
+  position: absolute;
+  top: 85px;
+  left: 318px;
+  font-family: "JetBrains Mono-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 6.84px;
+  line-height: normal;
+  color: #ef7a2d;
+}

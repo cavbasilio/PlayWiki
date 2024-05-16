@@ -12,7 +12,9 @@
   </head>
   <body>
 
-  
+<a href="aparelhos.php">
+  <button id="btn-aparelhos">CLIQUE AQUI PARA INFORMAÇÕES SOBRE TODAS ONU</button>
+</a>
     <div class="tela-tecnico">
       <div class="div">
         <div class="headline">

@@ -208,8 +208,27 @@ font-family: 'Overlock SC', sans-serif;
   margin-top: 10px;
   
 }
-/**************** Caixas de hierarquia *************/
 
+
+/**************** TELA TÉCNICOS  *************/
+#btn-aparelhos{
+  margin-left: 1100px;
+  margin-top: 20px;
+  align-items: center;
+  background-color: #fa6400;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: center;
+  position: relative;
+  transition: all 250ms;
+  touch-action: manipulation;
+  width: 550px;
+  margin-top: 10px;
+}
 .tela-tecnico {
   background-color: #ffffff;
   display: flex;
@@ -227,7 +246,7 @@ font-family: 'Overlock SC', sans-serif;
 }
 /* NOME RENAN*/
 .tela-tecnico .headline {
-  top: 293px;
+  top: 305px;
   left: 190px;
   display: flex; 
   flex-direction: column;
@@ -319,8 +338,8 @@ font-family: 'Overlock SC', sans-serif;
 
 /*JOSIEL NOME*/
 .tela-tecnico .headline-2 {
-  top: 0;
-  left: 41px;
+  top: 5px;
+  left: 70px;
   display: flex;
   flex-direction: column;
   width: 186px;
@@ -380,7 +399,7 @@ font-family: 'Overlock SC', sans-serif;
 /* RODRIGO NOME*/
 .tela-tecnico .headline-4 {
   top: 827px;
-  left: 162px;
+  left: 180px;
   display: flex;
   flex-direction: column;
   width: 186px;
@@ -416,7 +435,7 @@ font-family: 'Overlock SC', sans-serif;
 
 /* RODRIGO IMAGEM */
 .tela-tecnico .hero-image-6 {
-  top: 871px;
+  top: 800px;
   left: 127px;
   position: absolute;
   width: 200px;
@@ -428,8 +447,8 @@ font-family: 'Overlock SC', sans-serif;
 
 /* NOMELEONARDO*/
 .tela-tecnico .headline-5 {
-  top: 1108px;
-  left: 162px;
+  top: 1128px;
+  left: 180px;
   display: flex;
   flex-direction: column;
   width: 186px;

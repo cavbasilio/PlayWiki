@@ -31,3 +31,39 @@ render(days, hours, minutes, seconds);
 }
     setInterval(countdown, 1000);
     
+//aparelhos.js
+// script.js
+function showImage(imagePath) {
+    var imageContainer = document.getElementById('imageContainer');
+    var image = document.getElementById('image');
+    var listGroup = document.getElementById('listGroup');
+    
+    if (window.innerWidth <= 768) {
+        image.src = imagePath;
+        imageContainer.classList.add('fullscreen');
+    } else {
+        if (image.src.endsWith(imagePath)) {
+            imageContainer.style.display = 'none';
+            image.src = '';
+            listGroup.classList.remove('shift-left');
+        } else {
+            image.src = imagePath;
+            imageContainer.style.display = 'block';
+            listGroup.classList.add('shift-left');
+        }
+    }
+}
+
+function closeImage() {
+    var imageContainer = document.getElementById('imageContainer');
+    var image = document.getElementById('image');
+    var listGroup = document.getElementById('listGroup');
+    
+    imageContainer.style.display = 'none';
+    image.src = '';
+    listGroup.classList.remove('shift-left');
+    imageContainer.classList.remove('fullscreen');
+}
+
+
+

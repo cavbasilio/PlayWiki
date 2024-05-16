@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: center;
+}
+
+.list-group {
+    flex: 1;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.list-group.shift-left {
+    text-align: left;
+    flex: 0 0 50%;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.list-group-item button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fa6400;
+    transition: background-color 0.3s;
+}
+
+.list-group-item button:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+#imageContainer {
+    flex: 2;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    max-width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#imageContainer.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    #imageContainer {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .list-group.shift-left {
+        flex: 1;
+    }
+    .list-group-item button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

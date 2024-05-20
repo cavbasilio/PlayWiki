@@ -1,84 +1,62 @@
-<?php 
-    include('menu.php');
-?>
+<?php include('menu.php'); ?>
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-<a href="aparelhos.php">
-  <button id="btn-aparelhos">CLIQUE AQUI PARA INFORMAÇÕES SOBRE TODAS ONU</button>
-</a>
-    <div class="tela-tecnico">
-      <div class="div">
-        <div class="headline">
-          <div class="text-wrapper">Renan</div>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./css/tecnico.css" />
+</head>
 
-      <div class="overlap-group">
-        <div class="div-wrapper">
-          <div class="text-wrapper">Victor</div>
-        </div>
-          <img class="hero-image" src="img/Victor.jpeg"/>
-      </div>
+<body>
 
-        <div class="overlap">
-          <div class="div-wrapper">
-            <div class="text-wrapper">Emanuel</div>
-        </div>
+  <div class="tela-tecnico">
 
-          <img class="img" src="img/emanuel.jpg"/>
+    <a href="aparelhos.php">
+      <button id="btn-aparelhos">CLIQUE AQUI PARA INFORMAÇÕES SOBRE TODAS ONU</button>
+    </a>
 
-        </div>
-
-        <div class="overlap-2">
-          <div class="headline-2">
-            <div class="text-wrapper">Josiel</div>
-          </div>
-          <img class="hero-image-2" src="img/Josiel.jpeg"/>
-        </div>
-      
-        <div class="overlap-3">
-          <div class="headline-3">
-            <div class="text-wrapper">nome_tecnico2</div>
-          </div>
-            <img class="hero-image-3" src="img/hero-image.png" />
-        </div>
-
-
-        <div class="headline-4">
-          <div class="text-wrapper">Rodrigo</div>
-        </div>
-
-
-          <img class="hero-image-4" src="img/guida.jpeg" />
-
-          <div> <img class="hero-image-5" src="img/renan.jpeg" /></div>
-          <img class="hero-image-6" src="img/Rodrigo.jpeg" />
-
-        <div class="headline-5">
-          <div class="text-wrapper">Leonardo</div>
-        </div>
-        <img class="hero-image-7" src="img/leonardoTec.jpg"/>
-        <div class="overlap-4">
-          <div class="headline-3">
-            <div class="text-wrapper">Luciel</div>
-          </div>
-            <img class="hero-image-3" src="img/luciel.jpg"/>
-        </div>
-
-        <div class="headline-6">
-          <div class="text-wrapper-2">Thiago Guida</div>
-        </div>
-        <img class="vector" src="img/vector-1.svg"/>
-        <div class="text-wrapper-3">COMPOSIÇÃO DA EQUIPE TÉCNICA</div>
-      </div>
+    <div class="supervisor">
+      <div class="nome-supervisor">Thiago Guida</div>
+      <img class="imagem-supervisor" src="img/guida.png" />
     </div>
-  </body>
+
+    <div class="tecnicos">
+
+      <div class="titulo">
+        <div class="nome-tecnico">Renan</div>
+        <img class="imagem-tecnico" src="img/renan.png" />
+      </div>
+
+      <div class="titulo">
+        <div class="nome-tecnico">Josiel</div>
+        <img class="imagem-tecnico" src="img/Josiel.png" />
+      </div>
+
+      <div class="titulo">
+        <div class="nome-tecnico">Victor</div>
+        <img class="imagem-tecnico" src="img/Victor.png" />
+      </div>
+
+      <div class="titulo">
+        <div class="nome-tecnico">Welber</div>
+        <img class="imagem-tecnico" src="img/welber.png" />
+      </div>
+
+      <div class="titulo">
+        <div class="nome-tecnico">Rodrigo</div>
+        <img class="imagem-tecnico" src="img/Rodrigo.png" />
+      </div>
+
+      <div class="titulo">
+        <div class="nome-tecnico">Luciel</div>
+        <img class="imagem-tecnico" src="img/luciel.png" />
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>

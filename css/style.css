@@ -1,59 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
-*{
-    text-decoration: none;
-    margin: auto 0;
+/* Importação de fonte */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-#imgplayfibraNav{
-   
-    width: 80px;
-    border-radius: 10px;
+
+body {
+  font-family: 'Mulish', sans-serif;
 }
+
+/* Estilos para a barra de navegação */
+#imgplayfibraNav {
+  width: 80px;
+  border-radius: 10px;
+}
+
 .navbar-nav .nav-item {
-  margin-right: 10px; /* Espaçamento entre os itens do menu */
+  margin-right: 10px;
   font-weight: bold;
   font-size: 14pt;
 }
 
 .navbar-nav .nav-item:last-child {
-  margin-right: 0; /* Remove o espaçamento à direita do último item do menu */
+  margin-right: 0;
 }
 
-
-body{
-    background-image: url('./../img/fundo.png');
-    
-}
-
-
-/* BOTÃO SAIR */
+/* Estilos para o botão de sair */
 .btSair {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  --b: 3px; 
+  --s: 0.45em; 
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
-
   border: 0;
-
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 .btSair:hover,
-.btSair:focus-visible{
+.btSair:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 
 .btSair:active {
@@ -61,474 +66,106 @@ body{
   color: #fff;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #ffffff;
-}
-
-.element{
-    background-image: url('./../img/fundo1.png');
-    width: 25%;
-    height: 1200px;
-    border: 3px solid #F09819;
-    border-radius: 20px;
-    font-family: extrabold;    
-
-}
-.elementCenter{
-    width: 50%;
-    height: 1200px;
-    background-color: rgb(254, 255, 255);
-    border: 3px solid #F09819;
-    border-radius: 10px;
-    font-family: Nunito;
-    font-size: 16pt;
-}
-#imgTecnico{
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-#aniversariante{
-    display: block;
-    text-align: center;
-    border-bottom: 5px solid #F09819ed;
-    border-top: 5px solid #F09819;
-    border-radius: 60px;
-}
-
-#rumo{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-.texto {
-    text-align: center;
-    justify-content: center;
-}
-.subtitulo{
-    font-family: extrabold;
-    margin-top: 10px;
-    border-radius: 3px;
-    text-align: center;
-    -moz-box-shadow-: 9px 10px 9px rgba(50, 50, 50, 0.77);
-    -webkit-box-shadow-: 9px 10px 9px rgba(50, 50, 50, 0.77);
-    box-shadow: 9px 10px 9px rgba(50, 50, 50, 0.77);
-    text-emphasis: 2px;
-    height: 30px;
-    width: 250px;
-
-}
-#days{
-    font-size: 20pt;
-    justify-content: center;
-    text-align: center;
-    font-family: fantasy;
-    border: 3px solid #F09819;
-    margin: 8px;
-    border-radius: 10px;
-}
-
-#timeCompiled{
-    font-size: 16pt;
-    text-align: center;
-    font-family: fantasy;
-    border: 4px solid #F09819;
-    border-radius: 10px;
-    width: 97px;
-    margin: auto;
-
-}
-
-
-
-#vcSabia{ 
-font-family: 'Overlock SC', sans-serif;
-    
-}
-
-
-/***************** TÉCNICO ******************/
-.btn {
-  align-items: center;
-  background-color: #fa6400;
-  text-transform: uppercase;
-  border-radius: .25rem;
-  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  justify-content: center;
-  position: relative;
-  transition: all 250ms;
-  touch-action: manipulation;
-  width: 550px;
-  margin-top: 10px;
-
- 
-}
-
-.btn:hover, .btn:focus {
-  background-color: #F09819;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-
-
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-}
-
-.btn {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-#btn-aparelho{
-  align-items: center;
-  background-color: #fa6400;
-  text-transform: uppercase;
-  border-radius: .25rem;
-  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  justify-content: center;
-  position: relative;
-  transition: all 250ms;
- 
-  width: 170px;
-  margin-top: 10px;
-  
-}
-
-
-/**************** TELA TÉCNICOS  *************/
-#btn-aparelhos{
-  margin-left: 1100px;
-  margin-top: 20px;
-  align-items: center;
-  background-color: #fa6400;
-  text-transform: uppercase;
-  border-radius: .25rem;
-  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  justify-content: center;
-  position: relative;
-  transition: all 250ms;
-  touch-action: manipulation;
-  width: 550px;
-  margin-top: 10px;
-}
-.tela-tecnico {
-  background-color: #ffffff;
+/* Estilos para o container */
+.container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+/* Estilos para os elementos */
+.element {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid #f09819;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.elementCenter {
+  width: calc(100% - 40px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid #f09819;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16pt;
+}
+
+/* Imagens */
+#imgTecnico {
   width: 100%;
-  
-}
-
-.tela-tecnico .div {
-  background-color: #ffffff;
-  width: 1160px;
-  height: 1400px;
-  position: relative;
-}
-/* NOME RENAN*/
-.tela-tecnico .headline {
-  top: 305px;
-  left: 190px;
-  display: flex; 
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-}
-
-/* DIV NOME DE TODOS OS TÉCNICOS*/
-.tela-tecnico .text-wrapper {
-  position: relative;
-  width: 186px;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: -0.70px;
-  line-height: normal;
-  
-}
-
-/* DIV VICTOR GERAL*/
-.tela-tecnico .overlap-group {
-  position: absolute;
-  width: 224px;
-  height: 256px;
-  top: 293px;
-  left: 964px;
- 
-}
-
-/* DIV NOME VICTOR E EMANUEL */
-.tela-tecnico .div-wrapper {
-  top: 0;
-  left: 38px;
-  display: flex;
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-
-}
-/* VICTOR IMAGEM */
-.tela-tecnico .hero-image {
-  top: 37px;
-  left: 0;
-  border: solid 4px;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px #ef7a2d;
   border-radius: 10px;
+  text-align-last: center;
 }
 
-/* DIV EMANUEL GERAL */
-.tela-tecnico .overlap {
-  position: absolute;
-  width: 224px;
-  height: 248px;
-  top: 552px;
-  left: 964px;
-}
-
-/*  EMANUEL IMAGEM */
-.tela-tecnico .img {
-  top: 29px;
-  left: 0;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
-  
-}
-/*  JOSIEL GERAL*/
-.tela-tecnico .overlap-2 {
-  position: absolute;
-  width: 227px;
-  height: 262px;
-  top: 561px;
-  left: 127px;
- 
-}
-
-/*JOSIEL NOME*/
-.tela-tecnico .headline-2 {
-  top: 5px;
-  left: 70px;
-  display: flex;
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-  
-  
-  
-}
-/* JOSIEL IMAGEM*/
-.tela-tecnico .hero-image-2 {
-  top: 30px;
-  left: 0;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px;
-  border-radius: 10px;
-  border-color: #ef7a2d;
-}
-/* DIV NOME DO TECNICO VAZIO */
-.tela-tecnico .overlap-3 {
-  position: absolute;
-  width: 219px;
-  height: 249px;
-  top: 1122px;
-  left: 963px;
- 
-}
-/* NOME DO TECNICO VAZIO*/
-.tela-tecnico .headline-3 {
-  top: 0;
-  left: 32px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 44px;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-
-}
-
-/* LUCIEL E TECNICO VAZIO IMAGEM*/
-.tela-tecnico .hero-image-3 {
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  top: 30px;
-  left: 0;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
-  
-}
-
-/* RODRIGO NOME*/
-.tela-tecnico .headline-4 {
-  top: 827px;
-  left: 180px;
-  display: flex;
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-
-}
-/* THIAGO GUIDA IMAGEM*/
-.tela-tecnico .hero-image-4 {
-  top: 226px;
-  left: 549px;
-  position: absolute;
-  width: 230px;
-  height: 225px;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
-
-}
-
-/* RENAN IMAGEM*/
-.tela-tecnico .hero-image-5 {
-  top: 338px;
-  left: 127px;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
-  
-}
-
-/* RODRIGO IMAGEM */
-.tela-tecnico .hero-image-6 {
-  top: 800px;
-  left: 127px;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
- 
-}
-
-/* NOMELEONARDO*/
-.tela-tecnico .headline-5 {
-  top: 1128px;
-  left: 180px;
-  display: flex;
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-
-}
-/* IMAGEM LEONARDO */
-.tela-tecnico .hero-image-7 {
-  top: 1152px;
-  left: 127px;
-  position: absolute;
-  width: 200px;
-  height: 219px;
-  border: solid 4px;
-  border: solid 4px #ef7a2d;
-  border-radius: 10px;
-}
-
-/* LUCIEL GERAL*/
-.tela-tecnico .overlap-4 {
-  position: absolute;
-  width: 219px;
-  height: 249px;
-  top: 841px;
-  left: 964px;
-}
-
-/* DIV THIAGO GUIDA NOME*/
-.tela-tecnico .headline-6 {
-  top: 182px;
-  left: 553px;
-  display: flex;
-  flex-direction: column;
-  width: 186px;
-  height: 44px;
-  align-items: flex-start;
-  gap: var(--variable-collection-spacing-s);
-  position: absolute;
-
-}
-
-/* DIV THIAGO GUIDA NOME 2*/
-.tela-tecnico .text-wrapper-2 {
-  position: relative;
-  width: 200px;
-  height: 22px;
-  margin-top: -1px;
-  margin-right: -14px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: -0.48px;
-  line-height: normal;
-  white-space: nowrap;
-
-}
-
-/* BARRA CENTRAL DA PAGINA*/
-.tela-tecnico .vector {
-  position: absolute;
-  width: 5px;
-  height: 820px;
-  top: 504px;
-  left: 662px;
-  border: thick double #ef7a2d;
-}
-/* NOME TÍTULO.*/
-.tela-tecnico .text-wrapper-3 {
-  position: absolute;
-  top: 85px;
-  left: 318px;
-  font-family: "JetBrains Mono-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 36px;
+/* Outros elementos */
+#aniversariante {
   text-align: center;
-  letter-spacing: 6.84px;
-  line-height: normal;
-  color: #ef7a2d;
+  border-bottom: 5px solid #f09819ed;
+  border-top: 5px solid #f09819;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
+
+#rumo {
+  text-align: center;
+}
+
+.texto {
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  width: 250px;
+}
+
+#days {
+  font-size: 20pt;
+  text-align: center;
+  font-family: fantasy;
+  border: 3px solid #f09819;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+#timeCompiled {
+  font-size: 16pt;
+  text-align: center;
+  font-family: fantasy;
+  border: 4px solid #f09819;
+  border-radius: 10px;
+  width: 97px;
+  margin: auto;
+}
+
+#vcSabia {
+  font-family: "Overlock SC", sans-serif;
+}
+
+/* Estilos para botões */
+.btn {
+  background-color: #fa6400;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  box-shadow: rgba(133, 128, 119, 0.02) 0 1px 3px 0;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f09819;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+

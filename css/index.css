@@ -1,0 +1,113 @@
+body {
+  font-family: "Overlock SC", cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+  gap: 20px;
+}
+
+.elementLeft,
+.elementCenter,
+.elementRight {
+  flex: 1;
+  border: 3px solid #f09819;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: initial;
+}
+
+.elementLeft,
+.elementRight {
+  background-image: url('../img/fundo1.png');
+}
+
+.elementCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo,
+.playNews,
+.aniversarianteMes {
+  text-align: center;
+  text-decoration: underline wavy #f09819;
+}
+
+#imgTecnico img,
+.vcSabiaContainer img,
+#rumo img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#aniversariante {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  width: -webkit-fill-available
+}
+
+#aniversariante img {
+  width: 100px;
+  height: 125px;
+  border-radius: 30px;
+}
+
+.texto {
+  text-align: justify;
+}
+
+.vcSabiaContainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#vcSabia {
+  margin-top: 10px;
+}
+
+#rumo img {
+  width: 100%;
+  max-width: 130px;
+  border-radius: 10px;
+  box-shadow: 9px 10px 9px rgba(50, 50, 50, 0.77);
+}
+
+#countdown,
+#days,
+#timeCompiled {
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .elementLeft,
+  .elementCenter,
+  .elementRight {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  #imgTecnico img,
+  .vcSabiaContainer img,
+  #rumo img {
+    max-width: 100px;
+  }
+
+  #aniversariante {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

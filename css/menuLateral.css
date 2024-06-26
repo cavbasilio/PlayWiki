@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicia fechado */
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.open {
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+    .open {
+        left: 0;
+    }
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Animação do ícone do hamburger */
+.change .hamburger div:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .hamburger div:nth-child(2) {
+    opacity: 0;
+}
+
+.change .hamburger div:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}

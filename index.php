@@ -1,5 +1,5 @@
 <?php
-include 'menu.php';
+include './componentes/menuLateral.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,9 +8,8 @@ include 'menu.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Responsiva</title>
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>

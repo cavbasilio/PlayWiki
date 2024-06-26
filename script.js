@@ -21,8 +21,7 @@ const secondsElement = document.querySelector('[data-seconds]');
         
         const days = Math.floor(timeLeft / (1000 * 60 * 60 *24));
         const hours = Math.floor(
-            (timeLeft % (1000 * 60 *
-60 *24)) / (1000 * 60 * 60));
+            (timeLeft % (1000 * 60 *60 *24)) / (1000 * 60 * 60));
         
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
@@ -31,8 +30,6 @@ render(days, hours, minutes, seconds);
 }
     setInterval(countdown, 1000);
     
-//aparelhos.js
-// script.js
 function showImage(imagePath) {
     var imageContainer = document.getElementById('imageContainer');
     var image = document.getElementById('image');

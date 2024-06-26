@@ -1,4 +1,3 @@
-/* Botões das ONU'S */
 #btn-aparelhos {
   position: absolute;
   top: 120px;
@@ -20,7 +19,6 @@
   transition: background-color 0.5s;
 }
 
-/* TÍTULO */
 .titulo {
   flex: 0 0 calc(50% - 20px);
   max-width: 200px;
@@ -28,7 +26,6 @@
   text-align: center;
 }
 
-/* TÉCNICOS */
 .tecnicos {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +47,7 @@
 .tecnicos {
   margin-top: 100px;
 }
-/*Supervisor*/
+
 .supervisor {
   position: relative;
   top: 100px;
@@ -63,7 +60,6 @@
   height: 300px;
 }
 
-/*RESPONSIVIDADE*/
 @media screen and (max-width: 600px) {
   .imagem-supervisor {
     width: 45%;
